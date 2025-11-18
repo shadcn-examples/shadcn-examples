@@ -12,7 +12,7 @@ export default function TabCodePreview() {
     <div className="relative w-full overflow-auto">
       <CodeBlock code={code} lang="tsx" />
       <div className="absolute end-2 top-2">
-        <CopyToClipboard text={code as string} />
+        <CopyToClipboard text={code || ""} />
       </div>
     </div>
   );
