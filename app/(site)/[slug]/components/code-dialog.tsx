@@ -33,7 +33,7 @@ export default async function CodeDialog({ example }: Props) {
       code: `npx shadcn@latest add ${process.env.BASE_URL}/r/${example.href}.json`
     },
     {
-      name: "ban",
+      name: "bun",
       code: `bunx --bun shadcn@latest add ${process.env.BASE_URL}/r/${example.href}.json`
     }
   ];
