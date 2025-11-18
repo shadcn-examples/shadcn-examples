@@ -4,6 +4,52 @@
   "homepage": "http://localhost:3000",
   "items": [
     {
+      "name": "activity-feed",
+      "type": "registry:page",
+      "title": "Activity Feed",
+      "registryDependencies": [
+        "avatar",
+        "badge",
+        "button",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "examples/activity-feed/page.tsx",
+          "type": "registry:component",
+          "target": "components/activity-feed/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "add-product-form",
+      "type": "registry:page",
+      "title": "Add Product Form",
+      "registryDependencies": [
+        "button",
+        "card",
+        "input",
+        "label",
+        "textarea",
+        "select",
+        "badge",
+        "radio-group",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "examples/add-product-form/page.tsx",
+          "type": "registry:component",
+          "target": "components/add-product-form/page.tsx"
+        },
+        {
+          "path": "examples/add-product-form/validation.ts",
+          "type": "registry:component",
+          "target": "components/add-product-form/validation.ts"
+        }
+      ]
+    },
+    {
       "name": "admin-dashboard",
       "type": "registry:page",
       "title": "Admin Dashboard",
@@ -95,6 +141,11 @@
       ],
       "files": [
         {
+          "path": "examples/ai-chat/components/ai-chat.tsx",
+          "type": "registry:component",
+          "target": "components/ai-chat/components/ai-chat.tsx"
+        },
+        {
           "path": "examples/ai-chat/components/chat-interface.tsx",
           "type": "registry:component",
           "target": "components/ai-chat/components/chat-interface.tsx"
@@ -135,6 +186,896 @@
           "path": "examples/authentication/page.tsx",
           "type": "registry:component",
           "target": "components/authentication/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "bento-grid",
+      "type": "registry:page",
+      "title": "Bento Grid",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/bento-grid/page.tsx",
+          "type": "registry:component",
+          "target": "components/bento-grid/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "blog-detail-page",
+      "type": "registry:page",
+      "title": "Blog Detail Page",
+      "registryDependencies": [
+        "button",
+        "textarea",
+        "avatar",
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "examples/blog-detail-page/components/comment-section.tsx",
+          "type": "registry:component",
+          "target": "components/blog-detail-page/components/comment-section.tsx"
+        },
+        {
+          "path": "examples/blog-detail-page/components/content.tsx",
+          "type": "registry:component",
+          "target": "components/blog-detail-page/components/content.tsx"
+        },
+        {
+          "path": "examples/blog-detail-page/components/header.tsx",
+          "type": "registry:component",
+          "target": "components/blog-detail-page/components/header.tsx"
+        },
+        {
+          "path": "examples/blog-detail-page/page.tsx",
+          "type": "registry:component",
+          "target": "components/blog-detail-page/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "blog-page",
+      "type": "registry:page",
+      "title": "Blog Page",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "examples/blog-page/components/blog-page.tsx",
+          "type": "registry:component",
+          "target": "components/blog-page/components/blog-page.tsx"
+        },
+        {
+          "path": "examples/blog-page/components/blog-post-card.tsx",
+          "type": "registry:component",
+          "target": "components/blog-page/components/blog-post-card.tsx"
+        },
+        {
+          "path": "examples/blog-page/components/featured-post-sidebar-item.tsx",
+          "type": "registry:component",
+          "target": "components/blog-page/components/featured-post-sidebar-item.tsx"
+        },
+        {
+          "path": "examples/blog-page/page.tsx",
+          "type": "registry:component",
+          "target": "components/blog-page/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "cart",
+      "type": "registry:page",
+      "title": "Cart",
+      "registryDependencies": [
+        "button",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "examples/cart/components/cart-item.tsx",
+          "type": "registry:component",
+          "target": "components/cart/components/cart-item.tsx"
+        },
+        {
+          "path": "examples/cart/components/cart.tsx",
+          "type": "registry:component",
+          "target": "components/cart/components/cart.tsx"
+        },
+        {
+          "path": "examples/cart/components/coupon-section.tsx",
+          "type": "registry:component",
+          "target": "components/cart/components/coupon-section.tsx"
+        },
+        {
+          "path": "examples/cart/components/order-summary.tsx",
+          "type": "registry:component",
+          "target": "components/cart/components/order-summary.tsx"
+        },
+        {
+          "path": "examples/cart/components/payment-methods.tsx",
+          "type": "registry:component",
+          "target": "components/cart/components/payment-methods.tsx"
+        },
+        {
+          "path": "examples/cart/page.tsx",
+          "type": "registry:component",
+          "target": "components/cart/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "changelog-page",
+      "type": "registry:page",
+      "title": "Changelog Page",
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "examples/changelog-page/components/changelog.tsx",
+          "type": "registry:component",
+          "target": "components/changelog-page/components/changelog.tsx"
+        },
+        {
+          "path": "examples/changelog-page/page.tsx",
+          "type": "registry:component",
+          "target": "components/changelog-page/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "chat-app",
+      "type": "registry:page",
+      "title": "Chat App",
+      "registryDependencies": [
+        "avatar",
+        "input",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "examples/chat-app/components/chat-main.tsx",
+          "type": "registry:component",
+          "target": "components/chat-app/components/chat-main.tsx"
+        },
+        {
+          "path": "examples/chat-app/components/chat-sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/chat-app/components/chat-sidebar.tsx"
+        },
+        {
+          "path": "examples/chat-app/page.tsx",
+          "type": "registry:component",
+          "target": "components/chat-app/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "chat-ui-widgets",
+      "type": "registry:page",
+      "title": "Chat Ui Widgets",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/chat-ui-widgets/page.tsx",
+          "type": "registry:component",
+          "target": "components/chat-ui-widgets/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "checkout-page",
+      "type": "registry:page",
+      "title": "Checkout Page",
+      "registryDependencies": [
+        "card",
+        "input",
+        "label",
+        "button",
+        "checkbox",
+        "badge",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "examples/checkout-page/components/checkout-page.tsx",
+          "type": "registry:component",
+          "target": "components/checkout-page/components/checkout-page.tsx"
+        },
+        {
+          "path": "examples/checkout-page/page.tsx",
+          "type": "registry:component",
+          "target": "components/checkout-page/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "coming-soon-page",
+      "type": "registry:page",
+      "title": "Coming Soon Page",
+      "registryDependencies": [
+        "input",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "examples/coming-soon-page/components/coming-soon.tsx",
+          "type": "registry:component",
+          "target": "components/coming-soon-page/components/coming-soon.tsx"
+        },
+        {
+          "path": "examples/coming-soon-page/components/countdown.tsx",
+          "type": "registry:component",
+          "target": "components/coming-soon-page/components/countdown.tsx"
+        },
+        {
+          "path": "examples/coming-soon-page/page.tsx",
+          "type": "registry:component",
+          "target": "components/coming-soon-page/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "contact-page",
+      "type": "registry:page",
+      "title": "Contact Page",
+      "registryDependencies": [
+        "button",
+        "input",
+        "textarea",
+        "checkbox"
+      ],
+      "files": [
+        {
+          "path": "examples/contact-page/page.tsx",
+          "type": "registry:component",
+          "target": "components/contact-page/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "course-detail",
+      "type": "registry:page",
+      "title": "Course Detail",
+      "registryDependencies": [
+        "button",
+        "card",
+        "badge",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "examples/course-detail/components/course-curriculum.tsx",
+          "type": "registry:component",
+          "target": "components/course-detail/components/course-curriculum.tsx"
+        },
+        {
+          "path": "examples/course-detail/components/course-details.tsx",
+          "type": "registry:component",
+          "target": "components/course-detail/components/course-details.tsx"
+        },
+        {
+          "path": "examples/course-detail/components/course-header.tsx",
+          "type": "registry:component",
+          "target": "components/course-detail/components/course-header.tsx"
+        },
+        {
+          "path": "examples/course-detail/components/instructor-profile.tsx",
+          "type": "registry:component",
+          "target": "components/course-detail/components/instructor-profile.tsx"
+        },
+        {
+          "path": "examples/course-detail/components/video-player.tsx",
+          "type": "registry:component",
+          "target": "components/course-detail/components/video-player.tsx"
+        },
+        {
+          "path": "examples/course-detail/page.tsx",
+          "type": "registry:component",
+          "target": "components/course-detail/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dashboard-page-layouts",
+      "type": "registry:page",
+      "title": "Dashboard Page Layouts",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/dashboard-page-layouts/page.tsx",
+          "type": "registry:component",
+          "target": "components/dashboard-page-layouts/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "directory-list",
+      "type": "registry:page",
+      "title": "Directory List",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/directory-list/page.tsx",
+          "type": "registry:component",
+          "target": "components/directory-list/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "email-templates",
+      "type": "registry:page",
+      "title": "Email Templates",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/email-templates/page.tsx",
+          "type": "registry:component",
+          "target": "components/email-templates/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-states",
+      "type": "registry:page",
+      "title": "Empty States",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/empty-states/page.tsx",
+          "type": "registry:component",
+          "target": "components/empty-states/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "error-pages",
+      "type": "registry:page",
+      "title": "Error Pages",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/error-pages/page.tsx",
+          "type": "registry:component",
+          "target": "components/error-pages/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "event-calendar",
+      "type": "registry:page",
+      "title": "Event Calendar",
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "calendar",
+        "checkbox",
+        "dialog",
+        "input",
+        "label",
+        "popover",
+        "radio-group",
+        "select",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "examples/event-calendar/components/agenda-view.tsx",
+          "type": "registry:component",
+          "target": "components/event-calendar/components/agenda-view.tsx"
+        },
+        {
+          "path": "examples/event-calendar/components/calendar-dnd-context.tsx",
+          "type": "registry:component",
+          "target": "components/event-calendar/components/calendar-dnd-context.tsx"
+        },
+        {
+          "path": "examples/event-calendar/components/day-view.tsx",
+          "type": "registry:component",
+          "target": "components/event-calendar/components/day-view.tsx"
+        },
+        {
+          "path": "examples/event-calendar/components/draggable-event.tsx",
+          "type": "registry:component",
+          "target": "components/event-calendar/components/draggable-event.tsx"
+        },
+        {
+          "path": "examples/event-calendar/components/droppable-cell.tsx",
+          "type": "registry:component",
+          "target": "components/event-calendar/components/droppable-cell.tsx"
+        },
+        {
+          "path": "examples/event-calendar/components/event-calendar.tsx",
+          "type": "registry:component",
+          "target": "components/event-calendar/components/event-calendar.tsx"
+        },
+        {
+          "path": "examples/event-calendar/components/event-dialog.tsx",
+          "type": "registry:component",
+          "target": "components/event-calendar/components/event-dialog.tsx"
+        },
+        {
+          "path": "examples/event-calendar/components/event-item.tsx",
+          "type": "registry:component",
+          "target": "components/event-calendar/components/event-item.tsx"
+        },
+        {
+          "path": "examples/event-calendar/components/events-popup.tsx",
+          "type": "registry:component",
+          "target": "components/event-calendar/components/events-popup.tsx"
+        },
+        {
+          "path": "examples/event-calendar/components/index.ts",
+          "type": "registry:component",
+          "target": "components/event-calendar/components/index.ts"
+        },
+        {
+          "path": "examples/event-calendar/components/month-view.tsx",
+          "type": "registry:component",
+          "target": "components/event-calendar/components/month-view.tsx"
+        },
+        {
+          "path": "examples/event-calendar/components/week-view.tsx",
+          "type": "registry:component",
+          "target": "components/event-calendar/components/week-view.tsx"
+        },
+        {
+          "path": "examples/event-calendar/constants.ts",
+          "type": "registry:component",
+          "target": "components/event-calendar/constants.ts"
+        },
+        {
+          "path": "examples/event-calendar/hooks/use-current-time-indicator.ts",
+          "type": "registry:component",
+          "target": "components/event-calendar/hooks/use-current-time-indicator.ts"
+        },
+        {
+          "path": "examples/event-calendar/hooks/use-event-visibility.ts",
+          "type": "registry:component",
+          "target": "components/event-calendar/hooks/use-event-visibility.ts"
+        },
+        {
+          "path": "examples/event-calendar/page.tsx",
+          "type": "registry:component",
+          "target": "components/event-calendar/page.tsx"
+        },
+        {
+          "path": "examples/event-calendar/types.ts",
+          "type": "registry:component",
+          "target": "components/event-calendar/types.ts"
+        },
+        {
+          "path": "examples/event-calendar/utils.ts",
+          "type": "registry:component",
+          "target": "components/event-calendar/utils.ts"
+        }
+      ]
+    },
+    {
+      "name": "file-manager",
+      "type": "registry:page",
+      "title": "File Manager",
+      "registryDependencies": [
+        "button",
+        "input",
+        "avatar",
+        "switch",
+        "breadcrumb",
+        "dropdown-menu",
+        "separator",
+        "checkbox",
+        "sheet",
+        "dialog",
+        "label",
+        "pagination",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "examples/file-manager/components/file-manager.tsx",
+          "type": "registry:component",
+          "target": "components/file-manager/components/file-manager.tsx"
+        },
+        {
+          "path": "examples/file-manager/components/file-upload-dialog.tsx",
+          "type": "registry:component",
+          "target": "components/file-manager/components/file-upload-dialog.tsx"
+        },
+        {
+          "path": "examples/file-manager/components/pagination.tsx",
+          "type": "registry:component",
+          "target": "components/file-manager/components/pagination.tsx"
+        },
+        {
+          "path": "examples/file-manager/data.json",
+          "type": "registry:component",
+          "target": "components/file-manager/data.json"
+        },
+        {
+          "path": "examples/file-manager/page.tsx",
+          "type": "registry:component",
+          "target": "components/file-manager/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "file-manager-admin-dashboard",
+      "type": "registry:page",
+      "title": "File Manager Admin Dashboard",
+      "registryDependencies": [
+        "button",
+        "input",
+        "avatar",
+        "card",
+        "dropdown-menu",
+        "sheet"
+      ],
+      "files": [
+        {
+          "path": "examples/file-manager-admin-dashboard/components/file-manager-dashboard.tsx",
+          "type": "registry:component",
+          "target": "components/file-manager-admin-dashboard/components/file-manager-dashboard.tsx"
+        },
+        {
+          "path": "examples/file-manager-admin-dashboard/page.tsx",
+          "type": "registry:component",
+          "target": "components/file-manager-admin-dashboard/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "file-upload-form",
+      "type": "registry:page",
+      "title": "File Upload Form",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/file-upload-form/page.tsx",
+          "type": "registry:component",
+          "target": "components/file-upload-form/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "help-center",
+      "type": "registry:page",
+      "title": "Help Center",
+      "registryDependencies": [
+        "accordion",
+        "card",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "examples/help-center/components/faq.tsx",
+          "type": "registry:component",
+          "target": "components/help-center/components/faq.tsx"
+        },
+        {
+          "path": "examples/help-center/components/list-item.tsx",
+          "type": "registry:component",
+          "target": "components/help-center/components/list-item.tsx"
+        },
+        {
+          "path": "examples/help-center/components/search.tsx",
+          "type": "registry:component",
+          "target": "components/help-center/components/search.tsx"
+        },
+        {
+          "path": "examples/help-center/page.tsx",
+          "type": "registry:component",
+          "target": "components/help-center/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hero-sections",
+      "type": "registry:page",
+      "title": "Hero Sections",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/hero-sections/page.tsx",
+          "type": "registry:component",
+          "target": "components/hero-sections/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "kanban-board",
+      "type": "registry:page",
+      "title": "Kanban Board",
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "examples/kanban-board/components/kanban-render.tsx",
+          "type": "registry:component",
+          "target": "components/kanban-board/components/kanban-render.tsx"
+        },
+        {
+          "path": "examples/kanban-board/components/kanban.tsx",
+          "type": "registry:component",
+          "target": "components/kanban-board/components/kanban.tsx"
+        },
+        {
+          "path": "examples/kanban-board/lib/compose-refs.ts",
+          "type": "registry:component",
+          "target": "components/kanban-board/lib/compose-refs.ts"
+        },
+        {
+          "path": "examples/kanban-board/page.tsx",
+          "type": "registry:component",
+          "target": "components/kanban-board/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "login-pages",
+      "type": "registry:page",
+      "title": "Login Pages",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/login-pages/page.tsx",
+          "type": "registry:component",
+          "target": "components/login-pages/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "mail-app",
+      "type": "registry:page",
+      "title": "Mail App",
+      "registryDependencies": [
+        "select",
+        "dropdown-menu",
+        "avatar",
+        "button",
+        "calendar",
+        "label",
+        "popover",
+        "separator",
+        "switch",
+        "textarea",
+        "tooltip",
+        "drawer",
+        "dialog",
+        "badge",
+        "scroll-area",
+        "input",
+        "resizable",
+        "tabs",
+        "sheet"
+      ],
+      "files": [
+        {
+          "path": "examples/mail-app/components/account-switcher.tsx",
+          "type": "registry:component",
+          "target": "components/mail-app/components/account-switcher.tsx"
+        },
+        {
+          "path": "examples/mail-app/components/mail-display-mobile.tsx",
+          "type": "registry:component",
+          "target": "components/mail-app/components/mail-display-mobile.tsx"
+        },
+        {
+          "path": "examples/mail-app/components/mail-display.tsx",
+          "type": "registry:component",
+          "target": "components/mail-app/components/mail-display.tsx"
+        },
+        {
+          "path": "examples/mail-app/components/mail-list.tsx",
+          "type": "registry:component",
+          "target": "components/mail-app/components/mail-list.tsx"
+        },
+        {
+          "path": "examples/mail-app/components/mail.tsx",
+          "type": "registry:component",
+          "target": "components/mail-app/components/mail.tsx"
+        },
+        {
+          "path": "examples/mail-app/components/nav-desktop.tsx",
+          "type": "registry:component",
+          "target": "components/mail-app/components/nav-desktop.tsx"
+        },
+        {
+          "path": "examples/mail-app/components/nav-mobile.tsx",
+          "type": "registry:component",
+          "target": "components/mail-app/components/nav-mobile.tsx"
+        },
+        {
+          "path": "examples/mail-app/components/nav.tsx",
+          "type": "registry:component",
+          "target": "components/mail-app/components/nav.tsx"
+        },
+        {
+          "path": "examples/mail-app/data.tsx",
+          "type": "registry:component",
+          "target": "components/mail-app/data.tsx"
+        },
+        {
+          "path": "examples/mail-app/page.tsx",
+          "type": "registry:component",
+          "target": "components/mail-app/page.tsx"
+        },
+        {
+          "path": "examples/mail-app/use-mail.ts",
+          "type": "registry:component",
+          "target": "components/mail-app/use-mail.ts"
+        }
+      ]
+    },
+    {
+      "name": "media-gallery",
+      "type": "registry:page",
+      "title": "Media Gallery",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/media-gallery/page.tsx",
+          "type": "registry:component",
+          "target": "components/media-gallery/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "multi-step-form",
+      "type": "registry:page",
+      "title": "Multi Step Form",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "examples/multi-step-form/components/content.tsx",
+          "type": "registry:component",
+          "target": "components/multi-step-form/components/content.tsx"
+        },
+        {
+          "path": "examples/multi-step-form/components/sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/multi-step-form/components/sidebar.tsx"
+        },
+        {
+          "path": "examples/multi-step-form/page.tsx",
+          "type": "registry:component",
+          "target": "components/multi-step-form/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "music-app",
+      "type": "registry:page",
+      "title": "Music App",
+      "registryDependencies": [
+        "button",
+        "card",
+        "input",
+        "scroll-area",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "examples/music-app/components/music-app.tsx",
+          "type": "registry:component",
+          "target": "components/music-app/components/music-app.tsx"
+        },
+        {
+          "path": "examples/music-app/page.tsx",
+          "type": "registry:component",
+          "target": "components/music-app/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "note-app",
+      "type": "registry:page",
+      "title": "Note App",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/note-app/page.tsx",
+          "type": "registry:component",
+          "target": "components/note-app/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "notifications",
+      "type": "registry:page",
+      "title": "Notifications",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/notifications/page.tsx",
+          "type": "registry:component",
+          "target": "components/notifications/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "onboarding-flow",
+      "type": "registry:page",
+      "title": "Onboarding Flow",
+      "registryDependencies": [
+        "button",
+        "card",
+        "input",
+        "label",
+        "radio-group",
+        "select",
+        "switch",
+        "alert"
+      ],
+      "files": [
+        {
+          "path": "examples/onboarding-flow/components/onboarding.tsx",
+          "type": "registry:component",
+          "target": "components/onboarding-flow/components/onboarding.tsx"
+        },
+        {
+          "path": "examples/onboarding-flow/page.tsx",
+          "type": "registry:component",
+          "target": "components/onboarding-flow/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "payment-admin-dashboard",
+      "type": "registry:page",
+      "title": "Payment Admin Dashboard",
+      "registryDependencies": [
+        "card",
+        "button",
+        "badge",
+        "avatar",
+        "select",
+        "input",
+        "sheet"
+      ],
+      "files": [
+        {
+          "path": "examples/payment-admin-dashboard/components/payment-dashboard.tsx",
+          "type": "registry:component",
+          "target": "components/payment-admin-dashboard/components/payment-dashboard.tsx"
+        },
+        {
+          "path": "examples/payment-admin-dashboard/page.tsx",
+          "type": "registry:component",
+          "target": "components/payment-admin-dashboard/page.tsx"
         }
       ]
     },
@@ -222,6 +1163,128 @@
       ]
     },
     {
+      "name": "podcast-app",
+      "type": "registry:page",
+      "title": "Podcast App",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/podcast-app/page.tsx",
+          "type": "registry:component",
+          "target": "components/podcast-app/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "pos-app",
+      "type": "registry:page",
+      "title": "Pos App",
+      "registryDependencies": [
+        "card",
+        "button",
+        "separator",
+        "scroll-area"
+      ],
+      "files": [
+        {
+          "path": "examples/pos-app/page.tsx",
+          "type": "registry:component",
+          "target": "components/pos-app/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "pricing-tables",
+      "type": "registry:page",
+      "title": "Pricing Tables",
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "examples/pricing-tables/components/pricing-table.tsx",
+          "type": "registry:component",
+          "target": "components/pricing-tables/components/pricing-table.tsx"
+        },
+        {
+          "path": "examples/pricing-tables/page.tsx",
+          "type": "registry:component",
+          "target": "components/pricing-tables/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "product-detail-page",
+      "type": "registry:page",
+      "title": "Product Detail Page",
+      "registryDependencies": [
+        "label",
+        "radio-group",
+        "button",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "examples/product-detail-page/page.tsx",
+          "type": "registry:component",
+          "target": "components/product-detail-page/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "product-list",
+      "type": "registry:page",
+      "title": "Product List",
+      "registryDependencies": [
+        "badge",
+        "button",
+        "card",
+        "checkbox",
+        "input",
+        "label",
+        "radio-group",
+        "slider",
+        "toggle-group",
+        "separator",
+        "sheet",
+        "scroll-area"
+      ],
+      "files": [
+        {
+          "path": "examples/product-list/components/product-list.tsx",
+          "type": "registry:component",
+          "target": "components/product-list/components/product-list.tsx"
+        },
+        {
+          "path": "examples/product-list/page.tsx",
+          "type": "registry:component",
+          "target": "components/product-list/page.tsx"
+        },
+        {
+          "path": "examples/product-list/store.ts",
+          "type": "registry:component",
+          "target": "components/product-list/store.ts"
+        }
+      ]
+    },
+    {
+      "name": "profile-cards",
+      "type": "registry:page",
+      "title": "Profile Cards",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/profile-cards/page.tsx",
+          "type": "registry:component",
+          "target": "components/profile-cards/page.tsx"
+        }
+      ]
+    },
+    {
       "name": "profile-page",
       "type": "registry:page",
       "title": "Profile Page",
@@ -252,6 +1315,251 @@
           "path": "examples/profile-page/page.tsx",
           "type": "registry:component",
           "target": "components/profile-page/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "projects-list",
+      "type": "registry:page",
+      "title": "Projects List",
+      "registryDependencies": [
+        "button",
+        "card",
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "examples/projects-list/page.tsx",
+          "type": "registry:component",
+          "target": "components/projects-list/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "quiz-app",
+      "type": "registry:page",
+      "title": "Quiz App",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/quiz-app/page.tsx",
+          "type": "registry:component",
+          "target": "components/quiz-app/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "resume-cv-template",
+      "type": "registry:page",
+      "title": "Resume Cv Template",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/resume-cv-template/page.tsx",
+          "type": "registry:component",
+          "target": "components/resume-cv-template/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "rich-text-editor",
+      "type": "registry:page",
+      "title": "Rich Text Editor",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/rich-text-editor/page.tsx",
+          "type": "registry:component",
+          "target": "components/rich-text-editor/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "roadmap",
+      "type": "registry:page",
+      "title": "Roadmap",
+      "registryDependencies": [
+        "card",
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "examples/roadmap/page.tsx",
+          "type": "registry:component",
+          "target": "components/roadmap/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "roles-permissions",
+      "type": "registry:page",
+      "title": "Roles Permissions",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/roles-permissions/page.tsx",
+          "type": "registry:component",
+          "target": "components/roles-permissions/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "saas-landing-page",
+      "type": "registry:page",
+      "title": "Saas Landing Page",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/saas-landing-page/page.tsx",
+          "type": "registry:component",
+          "target": "components/saas-landing-page/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "search-results",
+      "type": "registry:page",
+      "title": "Search Results",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/search-results/page.tsx",
+          "type": "registry:component",
+          "target": "components/search-results/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-page",
+      "type": "registry:page",
+      "title": "Settings Page",
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "card",
+        "input",
+        "label",
+        "switch",
+        "checkbox",
+        "radio-group",
+        "select",
+        "separator",
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "examples/settings-page/components/settings-page.tsx",
+          "type": "registry:component",
+          "target": "components/settings-page/components/settings-page.tsx"
+        },
+        {
+          "path": "examples/settings-page/page.tsx",
+          "type": "registry:component",
+          "target": "components/settings-page/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "social-media",
+      "type": "registry:page",
+      "title": "Social Media",
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "card",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "examples/social-media/page.tsx",
+          "type": "registry:component",
+          "target": "components/social-media/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sortable-cards",
+      "type": "registry:page",
+      "title": "Sortable Cards",
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "examples/sortable-cards/components/sortable-example.tsx",
+          "type": "registry:component",
+          "target": "components/sortable-cards/components/sortable-example.tsx"
+        },
+        {
+          "path": "examples/sortable-cards/components/sortable.tsx",
+          "type": "registry:component",
+          "target": "components/sortable-cards/components/sortable.tsx"
+        },
+        {
+          "path": "examples/sortable-cards/page.tsx",
+          "type": "registry:component",
+          "target": "components/sortable-cards/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sticky-notes",
+      "type": "registry:page",
+      "title": "Sticky Notes",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/sticky-notes/page.tsx",
+          "type": "registry:component",
+          "target": "components/sticky-notes/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "survey-form",
+      "type": "registry:page",
+      "title": "Survey Form",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/survey-form/page.tsx",
+          "type": "registry:component",
+          "target": "components/survey-form/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "task-detail",
+      "type": "registry:page",
+      "title": "Task Detail",
+      "registryDependencies": [
+        "avatar",
+        "badge",
+        "button",
+        "card",
+        "checkbox"
+      ],
+      "files": [
+        {
+          "path": "examples/task-detail/page.tsx",
+          "type": "registry:component",
+          "target": "components/task-detail/page.tsx"
         }
       ]
     },
@@ -342,6 +1650,120 @@
           "path": "examples/tasks/page.tsx",
           "type": "registry:component",
           "target": "components/tasks/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "timeline",
+      "type": "registry:page",
+      "title": "Timeline",
+      "registryDependencies": [
+        "avatar",
+        "badge",
+        "card"
+      ],
+      "files": [
+        {
+          "path": "examples/timeline/page.tsx",
+          "type": "registry:component",
+          "target": "components/timeline/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "todo-list-app",
+      "type": "registry:page",
+      "title": "Todo List App",
+      "registryDependencies": [
+        "checkbox",
+        "badge",
+        "avatar",
+        "button",
+        "card",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "examples/todo-list-app/components/todo-item.tsx",
+          "type": "registry:component",
+          "target": "components/todo-list-app/components/todo-item.tsx"
+        },
+        {
+          "path": "examples/todo-list-app/components/todo-section.tsx",
+          "type": "registry:component",
+          "target": "components/todo-list-app/components/todo-section.tsx"
+        },
+        {
+          "path": "examples/todo-list-app/page.tsx",
+          "type": "registry:component",
+          "target": "components/todo-list-app/page.tsx"
+        },
+        {
+          "path": "examples/todo-list-app/types.ts",
+          "type": "registry:component",
+          "target": "components/todo-list-app/types.ts"
+        }
+      ]
+    },
+    {
+      "name": "two-step-verification",
+      "type": "registry:page",
+      "title": "Two Step Verification",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/two-step-verification/page.tsx",
+          "type": "registry:component",
+          "target": "components/two-step-verification/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "updates-page",
+      "type": "registry:page",
+      "title": "Updates Page",
+      "registryDependencies": [
+        "card",
+        "badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "examples/updates-page/page.tsx",
+          "type": "registry:component",
+          "target": "components/updates-page/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "user-cards",
+      "type": "registry:page",
+      "title": "User Cards",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/user-cards/page.tsx",
+          "type": "registry:component",
+          "target": "components/user-cards/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "video-call-chat",
+      "type": "registry:page",
+      "title": "Video Call Chat",
+      "registryDependencies": [
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "examples/video-call-chat/page.tsx",
+          "type": "registry:component",
+          "target": "components/video-call-chat/page.tsx"
         }
       ]
     }
