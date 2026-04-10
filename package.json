@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "registry:build": "shadcn registry:build && node ./scripts/generate-registry.js"
+    "registry:build": "node ./scripts/generate-registry.js && shadcn registry:build"
   },
   "dependencies": {
     "@ai-sdk/react": "^1.2.12",
